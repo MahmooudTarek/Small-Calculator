@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+    height: 500px;;
+    border: 2px solid;
+    border-radius: 8px;
+    margin: 300px;
+    border-radius: 15px;
+    background-color: brown;
+
+
+
+}
+section{
+    border: 2px solid;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: aquamarine;
+    box-shadow: inset 10px 10px 150px red;
+    
+    
+}
+section h3{
+    font-size: larger;
+    font-style: italic;
+    font-weight: bold;
+}
+p{
+    font-size: xx-large;
+}
+.add{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    
+
+
+    
+
+}
+.multi{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+
+
+    
+
+}
+
+input{
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+
+
+}
+.addresult{
+    border: 2px solid;
+    width: 100px;
+    height: 30px;
+    
+}
+.multiresult{
+    border: 2px solid;
+    width: 100px;
+    height: 30px;
+    
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+       <section>
+           <h3>ADDITION</h3>
+           <div class="add" >
+           <input id="first" type="number" onchange="add()"  value="2" step="1" min="1" max="10">
+           <p>+</p>
+           <input id="second" type="number"  onchange="add()"  value="3" step="1" min="1" max="10">
+           <p>=</p>
+           <div class="addresult"></div>
+
+        </div>
+        </section>
+       <section>
+           <h3>MULTIPLY</h3>
+           <div class="multi">
+            <input id="third" type="number" onchange="multiply()" value="4" step="1" min="1" max="10">
+            <p>+</p>
+            <input id="fourth" type="number" onchange="multiply()" value="5" step="1" min="1" max="10">
+            <p>=</p>
+            <div class="multiresult"></div>
+
+         </div>
+    </section>
+   </div> 
+   <script src="calc.js"></script>
+</body>
+</html>
